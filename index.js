@@ -8,7 +8,7 @@ Calcular nota final de alumnos ingresados.*/
 
 //Calcular costo total de productos y/o servicios seleccionados por el usuario.
 
-let rta = "si"
+/*let rta = prompt("desea cargar un producto(si/no): ")
 while (rta == "si") {
     alert("productos: televisor, celular, computadora")
     let producto = prompt("ingrese el producto que desee: ")
@@ -30,7 +30,7 @@ while (rta == "si") {
             break;
     }
     let rta = prompt("desea cargar otro producto(si/no): ")
-}
+}*/
 
 //Calcular pagos en cuotas sobre un monto determinado.
 
@@ -48,3 +48,32 @@ while (rta == "si"){
     }
     let rta = prompt("desea calcular otro pago (si/no): ")
 }*/
+
+//Calcular edad promedio de personas registradas.
+
+/*let sumaEdades = 0
+let cant = 0
+let num = parseInt(prompt("ingrese la cantidad de personas que quiere registrar: "))
+//no me entra al for
+for (let i = 0; i == num; i++) {
+    let edad = parseInt(prompt("ingrese la edad de la persona que quiere registrar: "))
+    let sumaEdades = sumaEdades + edad
+    let cant = cant + 1
+    break;
+}
+let promedio = sumaEdades / cant
+alert("el promedio de edades ingresadas es de: " + promedio)*/
+
+//Calcular nota final de alumnos ingresados
+
+function cargarNotas (){
+    let cargar = prompt("desea cargar nota del alumno(si/no): ")
+    while (cargar == "si"){
+        
+    }
+}
+
+let ingreso = prompt("desea ingresar a un alumno(si/no): ")
+while (ingreso == "si"){
+    
+}
