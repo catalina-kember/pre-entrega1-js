@@ -1,13 +1,9 @@
 
-/*
-Calcular pagos en cuotas sobre un monto determinado.
-Calcular valor final de un producto seleccionado en función de impuestos y descuentos.
-Calcular tiempo de espera promedio en relación con la cantidad de turnos registrados.
-Calcular edad promedio de personas registradas.
-Calcular nota final de alumnos ingresados.*/
+//Calcular valor final de un producto seleccionado en función de impuestos y descuentos.
+
 
 //Calcular costo total de productos y/o servicios seleccionados por el usuario.
-
+//NO ENTRA AL SWITCH
 /*let rta = prompt("desea cargar un producto(si/no): ")
 while (rta == "si") {
     alert("productos: televisor, celular, computadora")
@@ -32,8 +28,8 @@ while (rta == "si") {
     let rta = prompt("desea cargar otro producto(si/no): ")
 }*/
 
-//Calcular pagos en cuotas sobre un monto determinado.
-
+//Calcular pagos en cuotas sobre un monto determinado. 
+//FUNCIONA
 /*let rta = prompt("desea calcular un pago (si/no): ")
 
 while (rta == "si"){
@@ -50,30 +46,42 @@ while (rta == "si"){
 }*/
 
 //Calcular edad promedio de personas registradas.
-
-/*let sumaEdades = 0
-let cant = 0
-let num = parseInt(prompt("ingrese la cantidad de personas que quiere registrar: "))
-//no me entra al for
-for (let i = 0; i == num; i++) {
-    let edad = parseInt(prompt("ingrese la edad de la persona que quiere registrar: "))
+let contador = 0
+let sumaEdades = 0
+const promedio = (sumaEdades, contador) => {return sumaEdades / contador};
+let registrar = prompt("desea regitrar una nueva persona(si/no): ")
+while (registrar == "si"){
+    let contador = contador + 1
+    let edad = parseInt(prompt("ingrese la edad: "))
     let sumaEdades = sumaEdades + edad
-    let cant = cant + 1
-    break;
+    let registrar = prompt("desea regitrar una nueva persona(si/no): ")
 }
-let promedio = sumaEdades / cant
-alert("el promedio de edades ingresadas es de: " + promedio)*/
+
+console.log("el promedio de las edades de las personas ingresadas es de: " + promedio(sumaEdades, contador))
 
 //Calcular nota final de alumnos ingresados
 
-function cargarNotas (){
+//NO FUNCIONA
+
+/*function cargarNotas() {
+    let contador = 0
+    let sumaNota = 0
     let cargar = prompt("desea cargar nota del alumno(si/no): ")
-    while (cargar == "si"){
-        
+    while (cargar == "si") {
+        let contador = contador + 1
+        let nota = parseInt(prompt("ingrese la nota: "))
+        let sumaNota = sumaNota + nota
+        let cargar = prompt("desea cargar nota del alumno(si/no): ")
     }
+    return sumaNota
+    return contador
 }
 
+const promedio = (sumaNota, contador) => { return sumaNota / contador }
+
 let ingreso = prompt("desea ingresar a un alumno(si/no): ")
-while (ingreso == "si"){
-    
-}
+while (ingreso == "si") {
+    cargarNotas();
+    console.log("la nota fiinal del alumno ingresado es de: " + promedio(sumaNota, contador))
+    let ingreso = prompt("desea ingresar a un alumno(si/no): ")
+}*/
